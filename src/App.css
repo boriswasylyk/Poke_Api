@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    border: none; /* Elimina el borde predeterminado del cuerpo */
+  }
+  
+.home_div{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    align-items: center; /* Centra horizontalmente el contenido */
+    min-height: 100vh;
+    background: linear-gradient(
+       
+       50deg,
+       white 50%,
+        gray 
+    );
+   
+}
+.img_home{
+    width: 80%; 
+}
+.home_subtitle{
+    display:flex;
+    margin:0 ;
+    top:30%;
+    font-size:3rem;
+    color: rgba(255, 0, 0, 0.705);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.home_text{
+    display: flex;
+    margin-bottom: 1.9rem;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home_input {
+    display: flex;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 3% 3% 3% 3%;
+    color: rgba(0, 0, 0, 0.801);
+    transform: scale(1.0);
+    transition: background-color 0.3s ease; /* Agregamos transición a background-color */
+}
+
+.home_input:hover {
+    background-color: rgba(255, 0, 0, 0.226);; /* Cambiamos el color de fondo en hover */
+}
+
+.home_buttom{
+ display:flex;
+ font-size: 2rem;
+ width: 10rem;
+ background-color:rgba(255, 0, 0, 0.705);
+ color:white;
+ border: none;
+ margin-top: 1rem;
+ margin-left: 30%;
+ margin-right: 30%;
+ padding-left: 10%;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.2);
+cursor: pointer;
+}
+.home_buttom:hover{
+    background-color:rgba(255, 255, 255, 0) ;
+    color:rgba(255, 0, 0, 0.705); ;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.2);
+
+
+}
+.bottom_hero_home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      -90deg,    
+      rgb(0, 0, 0)8%,
+      rgba(0, 0, 0, 0.801)
+    ); /* Color de fondo */
+    color: white; /* Color del texto, ajusta según tus preferencias */
+    text-align: center; /* Alinea el contenido al centro si es necesario */
+    padding: 10px; /* Añade relleno si deseas espacio alrededor del contenido */
+    height: 15%;;
+  }
+
+  .line_rouge_home{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      90deg,    
+    rgba(255, 6, 6, 0.781)8%,
+        rgba(255, 6, 6, 0.486)
+    ); /* Color de fondo */
+    color: white; /* Color del texto, ajusta según tus preferencias */
+    text-align: center; /* Alinea el contenido al centro si es necesario */
+    padding: 10px; /* Añade relleno si deseas espacio alrededor del contenido */
+    height: 3vw;;
+  }
+.le_bowl_home{
+     display: flex;
+     position: relative;
+    margin-left: 48vw;
+    margin-top: 2vw;
+    height:3rem ;
+    width:3rem ;
+    background-color: rgb(53, 53, 53);
+    border: 0.6rem solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow:
+     0 0 0 0.5rem rgb(255, 255, 255),
+     0 0 0 0.9rem rgb(0, 0, 0);
+     
+}
+@media (max-width: 480px) {
+    .body{
+        display: flex;
+    }
+    .home_div {
+        font-size: 1.2rem;
+        display: flex;
+        overflow: hidden;
+        
+    }
+    .img_home{
+        display: flex;
+        width: 25rem;
+        height: 20rem;
+    }
+    .home_subtitle{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        margin-top: -3rem;
+    }
+    .home_text{
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+    .home_input{
+        font-size: 1.2rem;
+
+    }
+    .home_buttom{
+        font-size: 2rem;
+        margin:  auto ;
+        margin-top: 5rem;
+        padding-left: 2.5rem;
+    }
+    
+    .bottom_hero_home{
+        font-size:0.2rem;
+        
+    }
+    .line_rouge_home{
+        font-size: 2rem;
+        height: 4rem;
+    }
+    .le_bowl_home{
+    right: 1rem;
+    top: 1rem;
+    font-size: 1rem;
+    ;
+}
+}
+
+/* Estilos para tablet */
+
+
+/* Estilos para teléfonos móviles y pantallas pequeñas */
